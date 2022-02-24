@@ -1,7 +1,6 @@
 import { IsNotEmpty } from "class-validator";
 import { NextFunction } from "express";
-import HttpException from "../../exception/http.exception";
-import validationMiddleware from "../validataion.middleware";
+import validationMiddleware from "../validation.middleware";
 
 class TestDTO {
   @IsNotEmpty()

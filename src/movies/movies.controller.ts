@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from "express";
 import Controller from "../interfaces/controller.interface";
-import validationMiddleware from "../middleware/validataion.middleware";
+import validationMiddleware from "../middleware/validation.middleware";
 import { MovieDTO } from "./movie.dto";
 import { MoviesService } from "./movies.service";
 
