@@ -72,10 +72,11 @@ export class MoviesRepository {
 
   private byDuration = (duration: number) => {
     return function (movie: Movie) {
-      return (
-        Number(movie.runtime) >= duration - 10 &&
-        Number(movie.runtime) <= duration + 10
-      );
+      const match =
+        Number(movie.runtime) >= Number(duration) - 10 &&
+        Number(movie.runtime) <= Number(duration) + 10;
+
+      return match;
     };
   };
 
